@@ -1,0 +1,32 @@
+{
+  "name": "Schloss Aschenglut",
+  "version": "0.0.1",
+  "description": "OSR Abenteuer",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hadesrofl/Schloss-Aschenglut"
+  },
+  "author": "René Kremer <info@pen-paper-dice.de>",
+  "license": "MIT",
+  "homepage": "https://github.com/hadesrofl/Schloss-Aschenglut",
+  "dependencies": {
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^5.16.5",
+    "@mui/material": "^5.16.5",
+    "next": "^13.0.6",
+    "nextra": "latest",
+    "nextra-theme-docs": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.10",
+    "typescript": "^4.9.3"
+  }
+}

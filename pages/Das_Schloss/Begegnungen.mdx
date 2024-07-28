@@ -1,0 +1,9 @@
+# Begegnungen im Schloss
+
+Bei jedem Ortswechsel würfle 1W6. Bei einer 1 - 2 gibt es eine Zufallsbegegnung. Bei einer 3 - 4 würfle auch auf der Zufallsbegegnungstabelle, aber deute ein Omen über den gewürfelten Eintrag an. Die Begegnung ist nahe, aber hat die Gruppe nicht entdeckt.
+Einige der Einträge beinhalten seelenlose Kreaturen. Nach dem wiederkehrenden Tod dieser Leute ist ihre Seele soweit zerfallen, dass sie nur noch eine Hülle ihrer Selbst sind. Sie haben nur noch die Kernzüge aus ihrem vorigem Leben und meist sind sie getrieben von dem, was sie am Häufigsten im Leben taten.
+
+import BasicTable from "../../components/BasicTable";
+import { headers, rows, dice } from "../../data/encounterTable.ts";
+
+<BasicTable headers={headers} rows={rows} dice={dice} />
