@@ -3,7 +3,18 @@ const withNextra = require("nextra")({
   themeConfig: "./theme.config.tsx",
 });
 
-module.exports = withNextra({
+const isProduction = process.env.NODE_ENV === "production";
+const assetPrefix = isProduction ? "/schloss-aschenglut" : "";
+
+const nextConfig = {
+  images: {
+    unoptimized: true,
+  },
+  swcMinify: true,
+  trailingSlash: true,
+  assetPrefix,
+  basePath: assetPrefix,
   output: "export",
-  images: { unoptimized: true },
-});
+};
+
+module.exports = withNextra(nextConfig);
