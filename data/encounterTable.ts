@@ -1,5 +1,5 @@
 import { HeaderData, Row } from "../components/BasicTable";
-import { Dice } from "./Dice";
+import { Dice } from "./types/Dice";
 
 export const dice = Dice.d10;
 export const headers: HeaderData[] = [
