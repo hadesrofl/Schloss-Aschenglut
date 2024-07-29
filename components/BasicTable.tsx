@@ -9,9 +9,8 @@ import {
   Table,
 } from "@mui/material";
 import DiceIcon from "./DiceIcon";
-import { Dice, rollDice } from "../data/Dice";
+import { Dice, rollDice } from "../data/types/Dice";
 import { useState } from "react";
-import { useConfig } from "nextra-theme-docs";
 
 type Alignment = "left" | "center" | "right";
 
