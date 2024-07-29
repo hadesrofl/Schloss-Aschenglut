@@ -3,11 +3,15 @@ import { DocsThemeConfig } from "nextra-theme-docs";
 import { LightMode } from "@mui/icons-material";
 import Image from "next/image";
 
+
+const isProduction = process.env.NODE_ENV === "production";
+const assetPrefix = isProduction ? "/Schloss-Aschenglut" : "";
+
 const config: DocsThemeConfig = {
   logo: (
     <>
       <Image
-        src="/icons/Logo_PPD.png"
+        src={`${assetPrefix}/icons/Logo_PPD.png`}
         alt="Pen Paper Dice Logo"
         width={64}
         height={64}
@@ -21,7 +25,7 @@ const config: DocsThemeConfig = {
   chat: {
     icon: (
       <Image
-        src="/icons/mastodon-icon.svg"
+        src={`${assetPrefix}/icons/mastodon-icon.svg`}
         alt={"Mastodon Icon"}
         width={24}
         height={24}
